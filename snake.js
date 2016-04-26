@@ -25,16 +25,15 @@ function createGameLoop() {
 
 //////// CLEAR THE GAME AREA ///////
 function clearGameArea() {
-
+  // ???
 }
 
 //////// DRAW THE SNAKE ///////
 function drawSnake() {
-  for (/* var i = ???; i < ???; i++ */) {
-    // var snakePiece = ???;
+  snakeArray.forEach(function (snakePiece) {
     var snakeBlock = $('<div></div>');
     // ???
-  }
+  });
 }
 
 //////// CREATE THE FOOD ///////
@@ -53,18 +52,13 @@ function drawScore() {
   // ???
 }
 
-function drawFrame() {
-  // ??? create an object that represents the location of the snake's head
+function nextFrame() {
+  // Things to solve:
+  // 1) Moving the snake's head in the current direction.
+  // 2) Check for collision.
+  // 3) Check if the snake ate the food and grow it if needed.
 
-  // ??? change the direction of the snake if needed
-
-  // ??? move snake forward by one block
-
-  // ??? check collision
-
-  // ??? check if the snake ate the food
-
-  // draw everything
+  // make a clean slate and draw everything
   clearGameArea();
   drawSnake();
   drawFood();
