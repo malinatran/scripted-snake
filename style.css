@@ -4,36 +4,50 @@ body {
   overflow: hidden;
 }
 
-#gamearea {
+#game-area {
   width: 500px;
   height: 500px;
   background-color: white;
   border: 2px solid black;
   position: relative;
-  margin: 10px;
+  margin: 10px auto;
 }
 
-#scorearea {
-  height: 100px;
+#score-area {
+  height: 50px;
   width: 500px;
   border: 2px solid red;
-  margin: 10px;
+  margin: 10px auto;
   font-family: courier;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.gameover {
+.game-over {
   position: absolute;
   top: 200px;
   width: 500px;
   text-align: center;
   font-family: courier;
   color: black;
-  font-size: 16px;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .block {
   display: inline-block;
   width: 10px;
   height: 10px;
+  position: absolute;
+}
+
+.food-block {
+  background-color: black;
+  position: absolute;
+}
+
+.snake-block {
+  background-color: red;
   position: absolute;
 }
