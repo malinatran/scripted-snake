@@ -150,7 +150,7 @@ function newGame() {
   for (var i = (startingSnakeLength-1) * blockWidth; i>=0; i-=blockWidth) {
     snakeArray.push({
       left: i, 
-      top:0
+      top: 0
     });
   };
   drawSnake();
