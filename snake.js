@@ -88,7 +88,7 @@ function nextFrame() {
   } else {
     for (var i = 1; i < snakeArray.length - 1; i += 1 ) {
       if (snakeArray[i].left == snakeArray[0].left && 
-        snakeArray[i].top == snakeArray[0].top ) {
+        snakeArray[i].top == snakeArray[0].top) {
         endGame();
         return; 
       }
@@ -161,4 +161,3 @@ function newGame() {
 
 $(document).keyup(detectKeys);
 newGame();
-
